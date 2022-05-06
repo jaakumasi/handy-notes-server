@@ -22,4 +22,4 @@ app.use('/addnote', AddNoteRouter);
 app.use('/updatenote', UpdateNoteRouter);
 app.use('/deletenote', DeleteNoteRouter);
 
-app.listen(process.env.PORT, () => console.log('listening'));
+app.listen(process.env.PORT || 63013, () => console.log('listening'));
