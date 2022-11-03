@@ -20,13 +20,12 @@ router.post('/', express.json(), async (req, res) => {
             console.log(user);
             res.json({ successful: true });
         }
-        else {  //email already registered
+        else {  // email already registered
             res.json({ successful: false });
         }
     } catch (e) {
         console.log(e.message);
     }
-
 })
 
 module.exports = router;

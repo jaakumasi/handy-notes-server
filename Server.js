@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({ origin: '*' }));
 // app.use(express.urlencoded({extended: false}))   // allow access to form body
 
-mongoose.connect('mongodb+srv://jaakumasi:0208060268Ab@users-cluster.p8dcj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://jaakumasi:password@users-cluster.p8dcj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     () => console.log('connected to mongodb'));
 
 const LoginRouter = require('./LoginRouter');  // router to handle logins
